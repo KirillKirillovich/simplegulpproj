@@ -167,14 +167,21 @@ main{
     background-color: #F9F6F1;
     
    
-   .card-man__title{
+   .card-man__title {
        font-size: 24px;
        color: black;
        padding-top: 60px;
-
+        a{
+            color: black;
+            text-decoration: none;
+            &:hover{
+                color: #D84033;
+            }
+        }
        span{
            font-weight: bold;
        }
+       
    }
    .card-man__subtitle{
        font-size: 16px;
@@ -259,6 +266,7 @@ main{
     &:hover{
         transform: scale(1.03);
         transition: 0.8s;
+        color:#D84033;
     }
     @media (min-width: 768px) and (max-width: 1099px) {
         width: 200px;
@@ -308,6 +316,7 @@ main{
     &:hover{
         transform: scale(1.1);
         transition: 0.8s;
+        color: $mainr;
     }
     &:before{
             content: '';
@@ -384,6 +393,15 @@ main{
         font-size: 14px;
         font-weight: bold;
         color: black;
+        a{
+            font-size: 14px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+            &:hover{
+                color: $mainr;
+            }
+        }
         &:before{
             content: '';
             background-color: #D7B399;
