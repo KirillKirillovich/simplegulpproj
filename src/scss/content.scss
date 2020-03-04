@@ -1,0 +1,574 @@
+main{
+    background-color: #F9F6F1;
+    font-family: 'Montserrat';
+    .layout{
+        width: 1100px;
+        margin: auto;
+        @media (min-width: 768px) and (max-width: 1099px) {
+            width: 767px;
+        }
+        @media (min-width: 414px) and (max-width: 767px){
+            width: 413px;
+        }
+        @media (min-width: 320px) and (max-width: 413px){
+            width: 319px;
+          }
+    }
+    .banner-wrapper{
+        display: flex;
+        align-items: center;
+        padding-top: 126px;
+        padding-bottom: 207px;
+        @media (min-width: 768px) and (max-width: 1099px) {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        @media (min-width: 414px) and (max-width: 767px){
+            display:block;
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        @media (min-width: 320px) and (max-width: 413px){
+            display: block;
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+          }
+    }
+    .banner-price{
+        margin-left: 5px;
+    }
+    .banner-price__title{
+        font-size: 30px;
+        color: black;
+    }
+    .banner-price__title-price{
+        font-size: 55px;
+        color: black;
+        margin-top: 35px;
+        font-weight: bold;
+        @media (min-width: 768px) and (max-width: 1099px) {
+            font-size: 40px;
+        }
+        @media (min-width: 414px) and (max-width: 767px){
+            margin-top: 0;
+        }
+        @media (min-width: 320px) and (max-width: 413px){
+            margin-top: 0;
+            font-size: 45px;
+          }
+    }
+    .bunner-price__button{
+        background-color: #D7B399;
+        padding: 17px 30px 17px 30px;
+        width: 240px;
+        color: white;
+        border: none;
+        outline: none;
+        margin-top: 55px;
+        &:hover{
+            background-color: $mainr;
+        }
+        @media (min-width: 414px) and (max-width: 767px){
+            margin-top: 0;
+        }
+        @media (min-width: 320px) and (max-width: 413px){
+            margin-top: 0;
+          }
+    }
+    .banner-photo{
+        position: relative;
+        display: inline-block;
+    }
+    .banner-photo__img{
+        display: inline-block;
+        @media (min-width: 768px) and (max-width: 1099px) {
+            width: 400px;
+        }
+    }
+    .banner-photo__price{
+        display: inline-block;
+        position: absolute;
+        color: black;
+        font-size: 24px;
+        top:40px;
+        right: 6px;
+        font-weight: bold;
+        @media (min-width: 320px) and (max-width: 413px) {
+            font-size: 21px;
+        }
+        &::after{
+            content: " ";
+            height: 2px;
+            width: 100px;
+            background-color: black;
+            position: absolute;
+            top:50%;
+            left: -5px;
+        }
+    }
+    .banner-photo__discount-price{
+        display: inline-block;
+        position: absolute;
+        top:80px;
+        right: 0;
+        font-size: 42px;
+        color: $mainr;
+        font-weight: bold;
+        @media (min-width: 320px) and (max-width: 413px) {
+            font-size: 27px;
+        }
+    }
+
+   .banner-free{
+       display: block;
+       background-color: #212121;
+       color: #FFFFFF;
+       text-align: center;
+        .banner-free__title{
+            padding-top: 80px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 30px;
+            @media (min-width: 414px) and (max-width: 767px){
+                font-size: 20px;
+            }
+            @media (min-width: 320px) and (max-width: 413px){
+                font-size: 16px;
+                padding-top: 30px;
+              }
+        }
+        .banner-free__subtitle{
+            padding-bottom: 70px;
+            font-size: 21px;
+            @media (min-width: 320px) and (max-width: 413px){
+                font-size: 15px;
+                padding-bottom: 30px;
+              }
+        }
+        
+   }
+   
+   .flex{
+       display: flex;
+       justify-content: space-between;
+       @media (min-width: 414px) and (max-width: 767px){
+        display:block;
+        text-align: center;
+    }
+    @media (min-width: 320px) and (max-width: 413px){
+        display: block;
+        text-align: center;
+      }
+   }
+   .card-man{
+    position: relative;
+    background-color: #F9F6F1;
+    
+   
+   .card-man__title{
+       font-size: 24px;
+       color: black;
+       padding-top: 60px;
+
+       span{
+           font-weight: bold;
+       }
+   }
+   .card-man__subtitle{
+       font-size: 16px;
+       padding-top: 25px;
+   }
+   .card-man__button{
+    width: 80px;
+    height: 30px;
+    background-color: #D7B399;
+    border: none;
+    outline: none;
+    padding-top: 40px;
+    position: relative;
+    @media (min-width: 414px) and (max-width: 767px){
+        margin-top: 20px;
+    }
+    @media (min-width: 320px) and (max-width: 413px){
+        margin-top: 20px;
+      }
+    &:hover{
+        background-color: $mainr;
+    }
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto
+    }
+   }
+   .card-man__img{
+       padding-left: 250px;
+       vertical-align: middle;
+       @media (min-width: 768px) and (max-width: 1099px) {
+        padding-left:0;
+    }
+    @media (min-width: 414px) and (max-width: 767px){
+        display: none;
+    }
+    @media (min-width: 320px) and (max-width: 413px){
+        display: none;
+      }
+   }
+
+ }
+ .products-wrapper{
+    position: relative;
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        @media (min-width: 768px) and (max-width: 1099px) {
+            justify-content: center;
+        }
+        @media (min-width: 414px) and (max-width: 767px){
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        @media (min-width: 320px) and (max-width: 413px){
+            justify-content: space-around;
+            margin-top: 20px;
+          }
+    }
+ }
+ .products-card__title{
+    font-size: 21px;
+    position: absolute;
+    bottom: 24px;
+    left: 25px;
+    @media (min-width: 414px) and (max-width: 767px){
+        left:50px;
+    }
+    @media (min-width: 320px) and (max-width: 413px){
+        left:50px;
+      }
+}
+.products-card{
+    width: 275px;
+    position: relative;
+    height: 233px;
+    &:hover{
+        transform: scale(1.03);
+        transition: 0.8s;
+    }
+    @media (min-width: 768px) and (max-width: 1099px) {
+        width: 200px;
+    }
+    @media (min-width: 414px) and (max-width: 767px){
+        width: 150px;
+    }
+    @media (min-width: 320px) and (max-width: 413px){
+        width: 150px;
+      }
+}
+.card-new{
+    margin-top: 150px;
+    margin-bottom: 105px;
+    @media (min-width: 320px) and (max-width: 413px){
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+.card-new__title{
+    font-size: 36px;
+    color: #212121;
+    font-weight: bold;
+    text-align: center;
+    @media (min-width: 320px) and (max-width: 413px){
+        font-size: 30px;
+    }
+}
+}
+.flex{
+    justify-content: space-around;
+    @media (min-width: 768px) and (max-width: 1099px) {
+        flex-wrap: wrap;
+    }
+    @media (min-width: 414px) and (max-width: 767px){
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media (min-width: 320px) and (max-width: 413px){
+        display: flex;
+        flex-wrap: wrap;
+      }
+}
+.card-price{
+    // border:3px solid #D7B399;
+    text-align: center;
+    position: relative;
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.8s;
+    }
+    &:before{
+            content: '';
+            background-color: #D7B399;
+            height: 3px;
+            width: 25px;
+            display: block;
+            position: absolute;
+            top:-10px;
+            left:-10px;
+            @media (min-width: 414px) and (max-width: 767px){
+                display: none;
+            }
+            @media (min-width: 320px) and (max-width: 413px){
+                display: none;
+              }
+    }
+    &:after{
+        content: '';
+        background-color: #D7B399;
+        height: 25px;
+        width: 3px;
+        display: block;
+        position: absolute;
+        top:-10px;
+        left:-10px;
+        @media (min-width: 414px) and (max-width: 767px){
+            display: none;
+        }
+        @media (min-width: 320px) and (max-width: 413px){
+            display: none;
+          }
+    }
+    span{
+        &:before{
+            content: '';
+            background-color: #D7B399;
+            height: 3px;
+            width: 25px;
+            display: block;
+            position: absolute;
+            top:-10px;
+            right:-10px;
+            @media (min-width: 414px) and (max-width: 767px){
+                display: none;
+            }
+            @media (min-width: 320px) and (max-width: 413px){
+                display: none;
+              }
+    }
+    &:after{
+        content: '';
+        background-color: #D7B399;
+        height: 25px;
+        width: 3px;
+        display: block;
+        position: absolute;
+        top:-10px;
+        right:-10px;
+        @media (min-width: 414px) and (max-width: 767px){
+            display: none;
+        }
+        @media (min-width: 320px) and (max-width: 413px){
+            display: none;
+          }
+    }
+    }
+    .card-price__img{
+        padding-top: 22px;
+    }
+   
+    .card-price__title{
+        padding-top: 25px;
+        font-size: 14px;
+        font-weight: bold;
+        color: black;
+        &:before{
+            content: '';
+            background-color: #D7B399;
+            height: 3px;
+            width: 25px;
+            display: block;
+            position: absolute;
+            bottom:-10px;
+            left:-10px;
+            @media (min-width: 414px) and (max-width: 767px){
+                display: none;
+            }
+            @media (min-width: 320px) and (max-width: 413px){
+                display: none;
+              }
+    }
+    &:after{
+        content: '';
+        background-color: #D7B399;
+        height: 25px;
+        width: 3px;
+        display: block;
+        position: absolute;
+        bottom:-10px;
+        left:-10px;
+        @media (min-width: 414px) and (max-width: 767px){
+            display: none;
+        }
+        @media (min-width: 320px) and (max-width: 413px){
+            display: none;
+          }
+    }
+    }
+    .card-price__price{
+        padding-top: 15px;
+        padding-bottom: 25px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #D7B399;
+        &:before{
+            content: '';
+            background-color: #D7B399;
+            height: 3px;
+            width: 25px;
+            display: block;
+            position: absolute;
+            bottom:-10px;
+            right:-10px;
+            @media (min-width: 414px) and (max-width: 767px){
+                display: none;
+            }
+            @media (min-width: 320px) and (max-width: 413px){
+                display: none;
+              }
+    }
+    &:after{
+        content: '';
+        background-color: #D7B399;
+        height: 25px;
+        width: 3px;
+        display: block;
+        position: absolute;
+        bottom:-10px;
+        right:-10px;
+        @media (min-width: 414px) and (max-width: 767px){
+            display: none;
+        }
+        @media (min-width: 320px) and (max-width: 413px){
+            display: none;
+          }
+    }
+    }
+    @media (min-width: 768px) and (max-width: 1099px) {
+        &:last-child{
+            margin-top: 50px;
+        }
+    }
+}
+.more-models{
+    text-align: center;
+    margin-top: 105px;
+    margin-bottom: 150px;
+    @media (min-width: 414px) and (max-width: 767px){
+        margin-bottom: 50px;
+    }
+    @media (min-width: 320px) and (max-width: 413px){
+        margin-bottom: 50px;
+        margin-top: 0;
+      }
+    .more-models__button{
+        width: 220px;
+        height: 55px;
+        background-color: #D7B399;
+        color: white;
+        border: none;
+        outline: none;
+        &:hover{
+            background-color: $mainr;
+        }
+        img{
+            vertical-align: middle;
+            padding-left: 9px;
+        }
+    }
+}
+.block-form{
+    background-color: #212121;
+    margin-bottom: 150px;
+    @media (min-width: 320px) and (max-width: 413px){
+        margin-bottom: 0;
+      }
+    form{
+        @media (min-width: 768px) and (max-width: 1099px) {
+            padding-bottom: 20px;
+        }
+        @media (min-width: 414px) and (max-width: 767px){
+            margin-bottom: 20px;
+        }
+        @media (min-width: 320px) and (max-width: 413px){
+            margin-bottom: 20px;
+          }
+        
+    }
+    .flex{
+        display: flex;
+        align-items: center;
+    }
+    form{
+        @media (min-width: 768px) and (max-width: 1099px) {
+            padding-bottom: 20px;
+        }
+        @media (min-width: 320px) and (max-width: 413px){
+            padding-bottom: 20px;
+          }
+    }
+    .block-form__title{
+        padding:72px 60px 72px 0;
+        font-size: 30px;
+        color:#FFFFFF;
+        font-weight: bold;
+        display: inline-block;
+        @media (min-width: 768px) and (max-width: 1099px) {
+            padding-top:20px;
+            padding-bottom: 20px;
+        }
+        @media (min-width: 414px) and (max-width: 767px){
+            font-size: 20px;
+            padding:30px 0 30px 0;
+        }
+        @media (min-width: 320px) and (max-width: 413px){
+            font-size: 15px;
+            padding: 30px 0 30px 0;
+          }
+    }
+    .block-form__input{
+        width: 255px;
+        height: 40px;
+        border:none;
+        outline:none;
+        padding-left:20px;
+        font-family: "Montserrat";
+        @media (min-width: 320px) and (max-width: 413px){
+            width: 175px;
+          }
+    }
+    .block-form__button{
+        width: 185px;
+        height: 40px;
+        background-color: #D7B399;
+        border: none;
+        outline: none;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-family: "Montserrat";
+        &:hover{
+            background-color: $mainr;
+        }
+        @media (min-width: 414px) and (max-width: 767px){
+            width: 130px;
+        }
+        @media (min-width: 320px) and (max-width: 413px){
+            width: 125px;
+          }
+    }
+}
+
+}
+
