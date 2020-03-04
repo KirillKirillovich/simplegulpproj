@@ -483,12 +483,12 @@ main{
 .more-models{
     text-align: center;
     margin-top: 105px;
-    margin-bottom: 150px;
+    padding-bottom: 150px;
     @media (min-width: 414px) and (max-width: 767px){
-        margin-bottom: 50px;
+        padding-bottom: 50px;
     }
     @media (min-width: 320px) and (max-width: 413px){
-        margin-bottom: 50px;
+        padding-bottom: 50px;
         margin-top: 0;
       }
     .more-models__button{
